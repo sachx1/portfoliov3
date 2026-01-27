@@ -1,20 +1,33 @@
-/* Neon Animated Border */
+/* ============================
+   CYBERPUNK NEON BORDER
+   ============================ */
 .neon-border {
-  border: 4px solid #00ffff;
-  box-shadow: 0 0 20px #00ffff, inset 0 0 20px #00ffff;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 12px #00ffff, inset 0 0 12px #00ffff;
   animation: borderPulse 2s infinite alternate;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .neon-border {
+    border-width: 4px;
+    box-shadow: 0 0 20px #00ffff, inset 0 0 20px #00ffff;
+    padding: 2rem;
+  }
 }
 
 @keyframes borderPulse {
   0% {
-    box-shadow: 0 0 10px #00ffff, inset 0 0 10px #00ffff;
+    box-shadow: 0 0 8px #00ffff, inset 0 0 8px #00ffff;
   }
   100% {
     box-shadow: 0 0 25px #00ffff, inset 0 0 25px #00ffff;
   }
 }
 
-/* Glitch Text */
+/* ============================
+   GLITCH TEXT
+   ============================ */
 .glitch-text {
   position: relative;
   color: #00ffff;
@@ -51,17 +64,20 @@
   100% { clip-path: inset(0 0 80% 0); }
 }
 
-/* Neon Bar */
+/* ============================
+   NEON BAR + SHADOW
+   ============================ */
 .neon-bar {
   box-shadow: 0 0 12px #00ffff, 0 0 24px #00ffff;
 }
 
-/* Cyberpunk Shadow */
 .shadow-cyber {
   box-shadow: 0 0 12px #00ffff, 0 0 24px #00ffff;
 }
 
-/* CRT Scanlines */
+/* ============================
+   CRT SCANLINES
+   ============================ */
 .scanlines {
   background: repeating-linear-gradient(
     to bottom,
@@ -73,13 +89,24 @@
   mix-blend-mode: overlay;
 }
 
-/* Boot Line Glow */
+/* ============================
+   TERMINAL BOOT LINES
+   ============================ */
 .boot-line {
   color: #00ffff;
   text-shadow: 0 0 6px #00ffff;
+  font-size: 0.75rem;
 }
 
-/* Magenta Neon Text */
+@media (min-width: 768px) {
+  .boot-line {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================
+   MAGENTA NEON TEXT
+   ============================ */
 .text-magenta-400 {
   color: #ff00ff;
   text-shadow: 0 0 8px #ff00ff, 0 0 16px #ff00ff;
